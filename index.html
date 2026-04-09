@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyGo | One-Stop Packaging Procurement</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 4px; display: inline-block;">
+                    <path d="M22 10C22 10 18 14 12 14C6 14 2 10 2 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M12 4C14 4 16 6 16 8C16 10 12 14 12 14C12 14 8 10 8 8C8 6 10 4 12 4Z" fill="currentColor" opacity="0.2"/>
+                </svg>
+                Happy<span>Go</span>
+            </a>
+
+            <nav class="main-nav">
+                <a href="#products" data-i18n="navProducts">Products</a>
+                <a href="#how-it-works" data-i18n="navHow">How It Works</a>
+                <a href="#why-us" data-i18n="navWhy">Why HappyGo</a>
+                <a href="#custom" data-i18n="navCustom">Custom Order</a>
+            </nav>
+
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <span class="active" data-lang="en">EN</span>
+                    <span class="divider">/</span>
+                    <span data-lang="zh">ZH</span>
+                </div>
+                <button class="cart-btn" id="cart-btn">
+                    <span class="cart-icon">🛍</span>
+                    <span data-i18n="cartBtn">Order</span>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <button class="login-btn" data-i18n="loginBtn">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge"><span class="badge-dot"></span><span data-i18n="heroBadge">Industrial Compostable & Sustainable</span></div>
+                    <h1 id="hero-title">Industrial Packaging,<br>Professionalized for <span id="hero-industry-span">Donut Shop</span></h1>
+                    <p data-i18n="heroDesc">From coastal inspiration to industrial reality. We provide pre-verified, one-stop packaging solutions that actually work for your business and the planet.</p>
+
+                    <div class="hero-actions">
+                        <button class="cta-primary" id="hero-cta" data-i18n="heroCta">Browse Essentials</button>
+                        <a href="#how-it-works" class="cta-secondary" data-i18n="heroSecondary">How it works →</a>
+                    </div>
+
+                    <div class="industry-selector">
+                        <button class="industry-btn active" data-industry="donut">
+                            <svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 14a4 4 0 1 1 4-4 4 4 0 0 1-4 4z"></path><path d="M12 6c.01 0 .01 0 0 0"></path><path d="M16 9c.01 0 .01 0 0 0"></path><path d="M8 9c.01 0 .01 0 0 0"></path><path d="M12 18c.01 0 .01 0 0 0"></path></svg>
+                            <span data-i18n="indDonut">Donut Shop</span>
+                        </button>
+                        <button class="industry-btn" data-industry="cafe">
+                            <svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" y1="2" x2="6" y2="4"></line><line x1="10" y1="2" x2="10" y2="4"></line><line x1="14" y1="2" x2="14" y2="4"></line></svg>
+                            <span data-i18n="indCafe">Coffee Shop</span>
+                        </button>
+                        <button class="industry-btn" data-industry="sushi">
+                            <svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s5-2 10-2 10 2 10 2v10s-5-2-10-2-10 2-10 2Z"></path><path d="M7 15c.01 0 .01 0 0 0"></path><path d="M12 15c.01 0 .01 0 0 0"></path><path d="M17 15c.01 0 .01 0 0 0"></path><path d="M12 10V6"></path><path d="M12 6a3 3 0 0 0-3-3h6a3 3 0 0 0-3 3Z"></path></svg>
+                            <span data-i18n="indSushi">Sushi Bar</span>
+                        </button>
+                        <button class="industry-btn" data-industry="bakery">
+                            <svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m2 15 3-3c.8-.8 2.2-.8 3 0l7 7"></path><path d="m7 10 3-3c.8-.8 2.2-.8 3 0l8 8"></path><path d="m11 5 3-3c.8-.8 2.2-.8 3 0l5 5"></path></svg>
+                            <span data-i18n="indBakery">Bakery</span>
+                        </button>
+                        <button class="industry-btn" data-industry="bubble-tea">
+                            <svg class="ind-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 7 7 21"></path><path d="M5 7h14v10a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4Z"></path><circle cx="9" cy="15" r="1"></circle><circle cx="12" cy="18" r="1"></circle><circle cx="15" cy="14" r="1"></circle></svg>
+                            <span data-i18n="indBubble">Bubble Tea</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./assets/images/hero_bg.png" alt="HappyGo Packaging">
+                    <div class="hero-stat-card">
+                        <div class="stat-number">20</div>
+                        <div class="stat-label" data-i18n="statLabel">Curated SKUs per shop type</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TRUST BAR ===== -->
+        <section class="trust-bar">
+            <div class="container cert-logos">
+                <span>✅ FSC™ Certified</span>
+                <span>✅ BPI Compostable</span>
+                <span>✅ FDA Food Safe</span>
+                <span>✅ PFAS Free</span>
+                <span>✅ US Stock Ready</span>
+            </div>
+        </section>
+
+        <!-- ===== PRODUCT GRID ===== -->
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="section-title">
+                    <div>
+                        <h2 id="grid-title">Essentials Selection</h2>
+                        <p id="cert-subtitle" style="color:var(--text-muted);margin-top:6px;font-size:14px;">All products meet FSC and BPI compostable standards.</p>
+                    </div>
+                    <p id="stock-status" style="font-weight:700;color:var(--primary-green);font-size:14px;">● US Stock · 7-Day Delivery</p>
+                </div>
+
+                <div class="grid" id="product-grid">
+                    <!-- Injected by JS -->
+                </div>
+
+                <!-- Custom Order CTA -->
+                <div class="custom-cta" id="custom">
+                    <div class="custom-cta-inner">
+                        <div>
+                            <h3 data-i18n="customTitle">Need a specific size or spec?</h3>
+                            <p data-i18n="customDesc">Our team handles fully custom orders — from dieline design to certified production.</p>
+                        </div>
+                        <button class="cta-primary" data-i18n="customBtn">Request Custom Order →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== HOW IT WORKS ===== -->
+        <section class="how-section" id="how-it-works">
+            <div class="container">
+                <div class="section-center-title">
+                    <h2 data-i18n="howTitle">Ordering in 3 Steps</h2>
+                    <p data-i18n="howDesc">From browse to delivery — designed for busy shop owners.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-num">01</div>
+                        <div class="step-icon">🏪</div>
+                        <h3 data-i18n="step1Title">Choose Your Shop Type</h3>
+                        <p data-i18n="step1Desc">Select your business category. We instantly show only the packaging relevant to you — no irrelevant SKUs cluttering your view.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">02</div>
+                        <div class="step-icon">📦</div>
+                        <h3 data-i18n="step2Title">Pick & Set Quantities</h3>
+                        <p data-i18n="step2Desc">Add items to your order list with your desired quantity. All certifications and specs are pre-verified and shown upfront.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">03</div>
+                        <div class="step-icon">🚚</div>
+                        <h3 data-i18n="step3Title">Ship in 7 Days</h3>
+                        <p data-i18n="step3Desc">We ship from US stock. Most orders arrive within 7 business days. Need custom printing? Our team will follow up directly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WHY HAPPYGO ===== -->
+        <section class="why-section" id="why-us">
+            <div class="container">
+                <div class="section-center-title">
+                    <h2 data-i18n="whyTitle">Why HappyGo</h2>
+                    <p data-i18n="whyDesc">We solve the problems that traditional packaging distributors don't.</p>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-icon">🎯</div>
+                        <h3 data-i18n="why1Title">Curated, Not Overwhelming</h3>
+                        <p data-i18n="why1Desc">We pre-select 20 essential SKUs per shop type. You'll never scroll through 200,000 irrelevant products again.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🏅</div>
+                        <h3 data-i18n="why2Title">Pre-Verified Certifications</h3>
+                        <p data-i18n="why2Desc">Every product is verified for FSC, BPI, FDA, and PFAS-free status before it appears on our platform. You buy with confidence.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🌿</div>
+                        <h3 data-i18n="why3Title">Sustainable by Default</h3>
+                        <p data-i18n="why3Desc">All products are compostable, recyclable, or plant-based. Going green has never been this easy for your shop.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🔧</div>
+                        <h3 data-i18n="why4Title">Custom When You Need It</h3>
+                        <p data-i18n="why4Desc">Ready-to-ship products cover 80% of your needs. For the rest, our custom order team handles everything from design to delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#" class="logo">Happy<span>Go</span></a>
+                <p data-i18n="footerTagline">One-stop sustainable packaging<br>for independent food businesses.</p>
+                <div class="footer-certs">
+                    <span>FSC™</span><span>BPI</span><span>FDA</span><span>PFAS Free</span>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4 data-i18n="footerShop">Shop</h4>
+                    <a href="#" data-i18n="footerDonut">Donut Shop</a>
+                    <a href="#" data-i18n="footerCafe">Coffee Shop</a>
+                    <a href="#" data-i18n="footerSushi">Sushi Bar</a>
+                    <a href="#" data-i18n="footerBakery">Bakery</a>
+                    <a href="#" data-i18n="footerBubbleTea">Bubble Tea</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footerCompany">Company</h4>
+                    <a href="#" data-i18n="footerAbout">About Us</a>
+                    <a href="#" data-i18n="footerSustain">Sustainability</a>
+                    <a href="#" data-i18n="footerCerts">Certifications</a>
+                    <a href="#" data-i18n="footerCustom">Custom Orders</a>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footerSupport">Support</h4>
+                    <a href="#" data-i18n="footerContact">Contact Us</a>
+                    <a href="#" data-i18n="footerFaq">FAQ</a>
+                    <a href="#" data-i18n="footerShipping">Shipping Info</a>
+                    <a href="#" data-i18n="footerReturns">Returns</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <span>© 2026 HappyGo. All rights reserved.</span>
+                <span data-i18n="footerPowered">Powered by InnoRhino Group</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== CART DRAWER ===== -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3 data-i18n="cartTitle">Your Order</h3>
+            <button class="cart-close" id="cart-close">✕</button>
+        </div>
+        <div class="cart-body" id="cart-body">
+            <p class="cart-empty" data-i18n="cartEmpty">No items yet. Browse products and add to order.</p>
+        </div>
+        <div class="cart-footer">
+            <button class="cta-primary full-width" data-i18n="cartSubmit">Submit Inquiry →</button>
+            <p class="cart-note" data-i18n="cartNote">Our team will follow up within 24 hours.</p>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
