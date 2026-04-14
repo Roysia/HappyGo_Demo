@@ -181,11 +181,13 @@ const productsData = {
             { id: 9, name: "Premium Bamboo Sushi Tray", desc: "Natural bamboo, elevates delivery dining experience.", price: "$0.55", tag: "Sustainable", moq: "300 pcs", img: "./assets/images/donut_box.png" },
             { id: 10, name: "PLA Crystal Clear Sauce Cup", desc: "Plant-based plastic, high transparency, leak-proof.", price: "$0.08", tag: "Compostable", moq: "1,000 pcs", img: "./assets/images/coffee_cups.png" },
             { id: 11, name: "2-Compartment Kraft Bento Box", desc: "Grease-resistant, microwave-safe kraft board.", price: "$0.38", tag: "FSC Certified", moq: "500 pcs", img: "./assets/images/donut_box.png" },
+            { id: 18, name: "Kraft Window Sushi Takeout Box", desc: "Natural kraft with crystal-clear window — showcase your sushi, keep it fresh.", price: "$0.42", tag: "FSC Certified", moq: "500 pcs", img: "./assets/images/sushi_window_box.png" },
         ],
         zh: [
             { id: 9, name: "頂級竹製壽司餐盤", desc: "天然竹材，提升外送用餐儀式感。", price: "$0.55", tag: "永續材質", moq: "300 個", img: "./assets/images/donut_box.png" },
             { id: 10, name: "PLA 全透明醬料罐", desc: "植物基塑料，高透明度與防漏設計。", price: "$0.08", tag: "可堆肥", moq: "1,000 個", img: "./assets/images/coffee_cups.png" },
             { id: 11, name: "雙格牛皮紙便當盒", desc: "防油可微波牛皮紙板，雙格設計。", price: "$0.38", tag: "FSC 認證", moq: "500 個", img: "./assets/images/donut_box.png" },
+            { id: 18, name: "開窗壽司外帶盒", desc: "牛皮紙底搭配透明開窗設計，讓壽司顏值直接說話，保鮮又好看。", price: "$0.42", tag: "FSC 認證", moq: "500 個", img: "./assets/images/sushi_window_box.png" },
         ]
     },
     bakery: {
