@@ -5,7 +5,7 @@ let cart = []; // { id, name, price, qty, tag }
 // ===== TRANSLATIONS =====
 const translations = {
     en: {
-        title: "HappyGo | One-Stop Packaging Procurement",
+        title: "HappyGulls | One-Stop Packaging Procurement",
         heroBadge: "Industrial Compostable & Sustainable",
         heroDesc: "From coastal inspiration to industrial reality. We provide pre-verified, one-stop packaging solutions that actually work for your business and the planet.",
         heroCta: "Browse Essentials",
@@ -13,7 +13,7 @@ const translations = {
         statLabel: "Curated SKUs per shop type",
         navProducts: "Products",
         navHow: "How It Works",
-        navWhy: "Why HappyGo",
+        navWhy: "Why HappyGulls",
         navCustom: "Custom Order",
         loginBtn: "Login",
         cartBtn: "Order",
@@ -39,7 +39,7 @@ const translations = {
         step2Desc: "Add items to your order list with your desired quantity. All certifications and specs are pre-verified and shown upfront.",
         step3Title: "Ship in 7 Days",
         step3Desc: "We ship from US stock. Most orders arrive within 7 business days. Need custom printing? Our team will follow up directly.",
-        whyTitle: "Why HappyGo",
+        whyTitle: "Why HappyGulls",
         whyDesc: "We solve the problems that traditional packaging distributors don't.",
         why1Title: "Curated, Not Overwhelming",
         why1Desc: "We pre-select 20 essential SKUs per shop type. You'll never scroll through 200,000 irrelevant products again.",
@@ -75,7 +75,7 @@ const translations = {
         industries: { donut: "Donut Shop", cafe: "Coffee Shop", sushi: "Sushi Bar", bakery: "Bakery", "bubble-tea": "Bubble Tea" }
     },
     zh: {
-        title: "HappyGo | 一站式外帶包裝採購專區",
+        title: "HappyGulls | 一站式外帶包裝採購專區",
         heroBadge: "工業級可堆肥與永續方案",
         heroDesc: "從海灘垃圾的警示，到落實工業級環保。我們提供經預先驗證的一站式包材方案，兼顧商業運營與環境責任。",
         heroCta: "瀏覽精選品項",
@@ -109,7 +109,7 @@ const translations = {
         step2Desc: "將所需商品加入採購單並填寫數量，所有認證與規格均已預先驗證並清楚標示。",
         step3Title: "7 天快速出貨",
         step3Desc: "從美國現貨倉出貨，多數訂單 7 個工作天內送達。需要客製印刷？我們的團隊將直接與您跟進。",
-        whyTitle: "為何選擇 HappyGo",
+        whyTitle: "為何選擇 HappyGulls",
         whyDesc: "我們解決傳統包裝經銷商無法解決的問題。",
         why1Title: "精選，而非讓你選擇困難",
         why1Desc: "每種店型我們只精選 20 個核心 SKU，您再也不需要從 20 萬個不相關品項中大海撈針。",
